@@ -18,7 +18,7 @@ var forcast = (lat,long,callback)=>{
          else{
             const temp = data.current.temp
             const msg ={
-               "value": `Curretnt temperature is ${temp}  ${String.fromCharCode(176)+'C'} outside`
+               "value": `Current temperature is ${temp} ${String.fromCharCode(176)+'C'} outside`
             } 
             console.log(msg)
             callback(undefined, msg);

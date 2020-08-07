@@ -2,7 +2,7 @@
 console.log("Hello From the console and getting it from javaScript");
 
 const result = (address)=> {
-    message.textContent = "Loading"
+    message.textContent = "Fetching data.."
     const urll = `/weather?address=${address}`
 
     fetch(urll).then (( response) => { 
