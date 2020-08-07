@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/styles.css">
+
+    <title>WeatherHub</title>
+</head>
+<body>
+<div class="index-page">
+{{>header}}
+<form>
+    <p>WeatherHub</p>
+    <input class="input" oninput="changeText()" placeholder="Location">
+    <button class="button_search" >Search</button>
+</form>
+
+<section class="result-section">
+    <p class="todays-weather">Current </p>
+   
+</section>
+</div>
+
+<script src="/js/app.js"></script>
+</body>
+</html>
