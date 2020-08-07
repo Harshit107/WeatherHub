@@ -5,6 +5,7 @@ const getLocation = require("./geoCode.js")
 const getForcast = require("./forcast.js")
 //loading express
 const app = express()
+const port = process.env.PORT || 3000
 
 //public directiry path for server //-----server start from here 
 const publicDirectory = path.join(__dirname,'../public')
@@ -65,6 +66,6 @@ app.get('/weather',(req,res)=> {
 app.get('*',(req,res)=> {
     res.send('<h1>404 Page Not Found</h1>')
 })
-app.listen(3000,()=> {
-    console.log('You are at 3000 port')
+app.listen(port,()=> {
+    console.log(`Server is up on ${port}`)
 })

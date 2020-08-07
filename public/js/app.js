@@ -3,7 +3,7 @@ console.log("Hello From the console and getting it from javaScript");
 
 const result = (address)=> {
     message.textContent = "Loading"
-    const urll = `http://localhost:3000/weather?address=${address}`
+    const urll = `/weather?address=${address}`
 
     fetch(urll).then (( response) => { 
     
